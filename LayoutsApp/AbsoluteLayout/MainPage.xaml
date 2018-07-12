@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LayoutsApp"
+             x:Class="LayoutsApp.MainPage">
+
+    <AbsoluteLayout>
+        <!--x:0 y:0 Width:0.25 Height:0.25 -->
+        <Label Text="I am a Lablel" Margin="5" BackgroundColor="Red" AbsoluteLayout.LayoutBounds="0, 0, 0.25, 0.25"
+               AbsoluteLayout.LayoutFlags="All"/>
+        <!--x:0 y:0 Width:0.25 Height:0.25 -->
+        <Button Text="I am a Button" Margin="5" AbsoluteLayout.LayoutBounds="0.20, 0.20, 0.25, 0.25"
+               AbsoluteLayout.LayoutFlags="All" />
+
+    </AbsoluteLayout>
+
+
+</ContentPage>
