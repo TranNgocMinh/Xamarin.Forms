@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LayoutsApp"
+             x:Class="LayoutsApp.MainPage">
+
+    <!-- one row, two columns-->
+    <Grid>
+        <!-- one row -->
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!-- two columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <!-- Grid.Row="0" and Grid.Column="0" can be omitted -->
+        <Label Text="I am a Lablel" Margin="5"/>
+        <Button Grid.Column="1" Text="I am a Button" Margin="5"/>
+
+    </Grid>
+  <!-- two rows, one column-->
+    <Grid>
+        <!-- two rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!-- one column -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <!-- Grid.Row="0" and Grid.Column="0" can be omitted -->
+        <Label Text="I am a Lablel" Margin="5"/>
+        <Button Grid.Row="1" Text="I am a Button" Margin="5"/>
+
+    </Grid>
+
+</ContentPage>
