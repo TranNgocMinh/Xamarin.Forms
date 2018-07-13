@@ -5,9 +5,9 @@
              x:Class="LayoutsApp.MainPage">
     <ContentView BackgroundColor="Aqua" Margin="10" Padding="25">
 
-        <Label Text="Hi, I'm a simple Label inside of a simple ContentView"
-HorizontalOptions="Center"
-VerticalOptions="Center" BackgroundColor="Red"/>
+        <Label Text="I am a Label" HorizontalOptions="Center"
+
+                VerticalOptions="Center" BackgroundColor="Red"/>
 
 
     </ContentView>
