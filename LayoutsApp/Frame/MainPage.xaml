@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LayoutsApp"
+             x:Class="LayoutsApp.MainPage">
+    <Frame OutlineColor="Red" CornerRadius="10" HasShadow="True" Margin="20" >
+        <Label Text="I am a Lablel" Margin="5" BackgroundColor="Red" HorizontalOptions="Center" VerticalOptions="Center"/>
+       
+    </Frame>
+
+
+</ContentPage>
