@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ControlsApp"
+             x:Class="ControlsApp.MainPage">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="5" HorizontalOptions="Center">
+            <Image Source="ngocminhtran.jpg"/>
+        </StackLayout>
+        <Grid>
+            <!-- five rows -->
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <!-- two columns -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <!-- Grid.Row="0" and Grid.Column="0" can be omitted -->
+            <Label Grid.Column="0" Grid.Row="0" Text="Name: " Margin="5"/>
+            <Label Grid.Column="0" Grid.Row="1" Text="Email: " Margin="5"/>
+            <Label Grid.Column="0" Grid.Row="2" Text="Birthday: " Margin="5"/>
+            <Label Grid.Column="0" Grid.Row="3" Text="Male? " Margin="5"/>
+            <Label Grid.Column="0" Grid.Row="4" Text="{Binding Source={x:Reference age},Path=Value,
+                              StringFormat='Age: {0:F1}'}" Margin="5" />
+            <Entry Grid.Column="1" Grid.Row="0" x:Name="name" Placeholder="Enter your name..."/>
+            <Entry Grid.Column="1" Grid.Row="1" x:Name="email" Placeholder="Enter your email..."/>
+            <DatePicker Grid.Column="1" Grid.Row="2" x:Name="birthday" MinimumDate="01/01/1980" MaximumDate="12/31/2018"/>
+            <Switch x:Name="sex" IsToggled="True"  Grid.Column="1" Grid.Row="3" HorizontalOptions="Start"/>
+            <Slider x:Name="age" Maximum="100" Minimum="0" Value="50" Grid.Column="1" Grid.Row="4"/>
+        </Grid>
+        <Grid>
+            <!-- one row -->
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <!-- two columns -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <!-- Grid.Row="0" and Grid.Column="0" can be omitted -->
+            <Button x:Name="btnSubmit"  Grid.Column="1" Grid.Row="0" Text="Submit" Margin="5" Clicked="btnSubmit_Clicked"/>
+            <Button x:Name="btnCancel"  Grid.Column="2" Grid.Row="0" Text="Cancel" Margin="5" Clicked="btnCancel_Clicked"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
