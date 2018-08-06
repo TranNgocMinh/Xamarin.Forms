@@ -1,6 +1,6 @@
 namespace NavigApp
 {
-       public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage
     {
        public  MainPage()
        {
