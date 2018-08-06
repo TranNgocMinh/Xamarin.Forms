@@ -1,0 +1,7 @@
+<ContentPage ...>
+    <StackLayout>
+        <Label x:Name="name" Text="I am " HorizontalOptions="Center" 
+               VerticalOptions="Center"/>
+        <Button .../>
+    </StackLayout>
+</ContentPage>
